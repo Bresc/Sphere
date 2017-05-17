@@ -1,0 +1,7 @@
+#version 330 core
+layout(location = 0) in vec4 in_pos;
+
+void main(){
+   gl.position.xyz = in_pos;
+   gl.position.w = 1;
+}
